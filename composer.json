@@ -1,13 +1,39 @@
 {
-    "name": "r0v/visionChat",
-    "description": "Modern and simple chat for Flarum engine.",
+    "name": "r0v/flarum-ext-visionchat",
+    "description": "Modern and simply chat for Flarum engine.",
+    "keywords": ["chat", "flarum", "shoutbox", "vision-chat"],
     "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tpk",
+            "email": "admin@tcgforum.pl",
+            "homepage": "https://tpk.ct8.pl"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/r0v/visionChat/issues",
+        "source": "https://github.com/r0v/visionChat"
+    },
     "require": {
-        "flarum/core": "^0.1.0-beta.3"
+        "flarum/core": "^0.1.0-beta.6",
     },
     "extra": {
         "flarum-extension": {
-            "title": "visionChat"
+            "title": "visionChat",
+            "icon": {
+                "image": "icon.png",
+                "backgroundSize": "75px 75px",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundColor": "#244052",
+                "color": "#fff"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "r0v\\visionChat\\": "src/"
         }
     }
 }
